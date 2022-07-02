@@ -1,0 +1,25 @@
+
+@import "./utils/variables";
+@import "./utils/hidden";
+@import "./utils/is-hidden";
+
+@import "./base/reset";
+@import "./base/common";
+
+
+@import "./components/container";
+@import "./components/section-title";
+@import "./components/soc";
+@import "./components/close-btn";
+@import "./components/modal";
+
+@import "./layout/heder";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/service";
+@import "./layout/masters";
+@import "./layout/customers";
+@import "./layout/portfolio";
+@import "./layout/footer";
+
+
