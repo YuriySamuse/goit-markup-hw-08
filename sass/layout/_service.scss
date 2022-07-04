@@ -1,6 +1,10 @@
 .service {
     padding-bottom: var(--padin-botom-sect);
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
+ 
   .service__title {
     margin-bottom: 50px;
   }

@@ -2,32 +2,51 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;    
+  }
+  .hero-content {
+    background-color: var(--hero-bg-color);
     background-image: linear-gradient(
       to right, 
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-    background-color: var(--hero-bg-color);
+      rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet.jpg); 
+      
   }
-  
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(
+      to right, 
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop.jpg);
+      
+    }        
+  }
   .hero__title {
+    width: 100%;
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--btn-color);
   }
   .hero__btn {
     cursor: pointer;
-    font-family: inherit;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -35,6 +54,7 @@
     align-items: center;
     letter-spacing: 0.06em;
     border: 0;
+    border-radius: 4px;
     width: 200px;
     height: 50px;    
     color: var(--btn-color);
