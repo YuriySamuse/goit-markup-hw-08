@@ -1,28 +1,32 @@
 .masters {
-    padding-top: var(--padin-botom-sect);
-    padding-bottom: var(--padin-botom-sect);
     background-color: var(--portfol-btn);
   }
-  .masters__title {
-    margin-bottom: 50px;
-  }
+  
   .masters__list {
-    /* outline: 1px solid orange
-    ; */
-    padding: 0;
-    margin: 0;
-    /* list-style: none; */
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--card-set-gep));
-    margin-top: calc(-1 * var(--card-set-gep));
+    outline: 1px solid orange;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
   }
   
   .masters__item {
-    /* outline: 1px solid teal; */
-    flex-basis: calc(100% / 4 - var(--card-set-gep));
-    margin-left: var(--card-set-gep);
-    margin-top: var(--card-set-gep);
+    width: 100%;
+      margin-bottom: 30px;
+    
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 15px;
+      }
+    
+      &:last-child {
+        margin-bottom: 0;
+      }    
   }
   
   .card {
