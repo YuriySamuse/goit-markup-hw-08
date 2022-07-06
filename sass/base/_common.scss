@@ -2,6 +2,10 @@ body {
     font-family: "Roboto";
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 .list {
     list-style: none;
     padding-left: 0;
