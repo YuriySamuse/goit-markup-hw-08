@@ -1,3 +1,15 @@
+ .header {
+   background-color: #ffffff;
+   border-bottom: 1px solid #ECECEC;
+   padding-top: 24px;
+   padding-bottom: 25px;
+  position: relative;
+ }
+
+ .main-nav {
+  
+ }
+
 .logo {
     font-family: "Raleway";
     font-weight: 700;
@@ -10,12 +22,40 @@
     }
   }
 
-  .header {  
-    background-color: #ffffff;
-    border-bottom: 1px solid #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 25px;
+  .menu-button {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    & .icon-cross {
+        display: none;
+      }
+    &.is-open .icon-cross {
+      display: block;
+      }
+    &.is-open .icon-menu {
+      display: none;
+    }
   }
+  
+  .mob-menu {
+    display: none;
+    height: 400px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: palegoldenrod;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    &.is-open {
+      display: block;
+    }
+  }
+
   .main-nav {
     display: flex;
     align-items: center;  
