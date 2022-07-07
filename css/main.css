@@ -432,11 +432,13 @@ body.modal-open {
   display: flex;
 }
 
-.nav__item {
-  margin-right: 50px;
-}
-.nav__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .nav__item {
+    margin-right: 50px;
+  }
+  .nav__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .nav__link {
@@ -466,12 +468,25 @@ body.modal-open {
 
 /* ----Heder-contact-nav----- */
 .contacts {
-  display: flex;
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.contact__item + .contact__item {
-  margin-left: 50px;
+@media screen and (min-width: 480px) {
+  .contact__item {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__item {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item + .contact__item {
+    margin-left: 30px;
+  }
 }
 
 .contact__link {
@@ -506,27 +521,39 @@ body.modal-open {
   text-align: center;
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.hero-content {
   background-color: var(--hero-bg-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile.jpg);
+}
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile-2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
-  .hero-content {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet.jpg);
   }
 }
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet-2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
-  .hero-content {
+  .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop-2x.jpg);
   }
 }
 
