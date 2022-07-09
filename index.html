@@ -14,56 +14,104 @@
 <body>
     <header class="header">
         <div class="container main-nav">
-            
-            <a href="./index.html" class="logo link"><span class="logo__prelogo">Web</span>Studio</a>
+            <!-- Logo -->
+            <a href="./index.html" 
+                class="logo link">
+                <span class="logo__prelogo">Web</span>Studio
+            </a>
             <button 
                 type="button" 
-                class="menu-button" 
-                aria-expanded="true" 
-                aria-controls="menu-container"
-                data-menu-button
-            >
-                <svg with="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-                    <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+                class="menu-open-btn">
+                <svg with="40" height="40" aria-label="мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>                    
                 </svg>
             </button>
-            <div class="menu-container" id="menu-container" data-menu>
-                <!-- <div class="navigation"> -->
-                    <nav class="nav navigation">
-                        <ul class="nav__list list">
-                            <li class="nav__item">
-                                <a class="nav__link current link" href="./index.html">Студия</a>
+            <nav class="nav">
+            <!-- nav-menu -->
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a class="nav__link current link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- menu-contacts -->
+            <ul class="contact__list list">
+                <li class="contact__item">
+                    <a class="contact__link link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon" width="16px" height="12px">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link link icon-phone" href="tel:+380961111111">
+                        <svg class="contact__icon" width="10px" height="16px">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                    </ul>
+            </div>    
+            <div class="mobile-menu is-hidden">
+                <div class="mobile-container">
+                    <div class="mob-menu-top">
+                    <button type="button" 
+                        class="menu-close-btn">
+                        <svg with="40" height="40">
+                            <use class="mob-cross" href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                        <nav class="mob-menu">                        
+                            <ul class="mob-menu__list list">
+                                <li class="mob-menu__item">
+                                    <a class="mob-menu__link current link" href="./index.html">Студия</a>
+                                </li>
+                                <li class="mob-menu__item">
+                                    <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="mob-menu__item">
+                                    <a class="mob-menu__link link" href="">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>                    
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-contact__list list">
+                            <li class="mob-contact__item">
+                                <a class="mob-contact__link--tel link" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
                             </li>
-                            <li class="nav__item">
-                                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+                            <li class="mob-contact__item">
+                                <a class="mob-contact__link link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>                        
+                        </ul>
+                        <ul class="mob-soc__list list">
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link link">Instagram</a>
                             </li>
-                            <li class="nav__item">
-                                <a class="nav__link link" href="">Контакты</a>
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link link">Twitter</a>
+                            </li>
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link link">Facebook</a>
+                            </li>
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link link">LinkedIn</a>
                             </li>
                         </ul>
-                    </nav>
-                <!-- </div> -->
-                <!-- <div class="contacts"> -->
-                    <ul class="contact__list list">
-                        <li class="contact__item">
-                            <a class="contact__link link" href="mailto:info@devstudio.com">
-                                <svg class="contact__icon" width="16" height="12">
-                                    <use href="./images/icons.svg#icon-mail"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="contact__item">
-                            <a class="contact__link link" href="tel:+380961111111">
-                                <svg class="contact__icon" width="10" height="16">
-                                    <use href="./images/icons.svg#icon-phone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                <!-- </div> -->
+                    </div>
+                </div>
             </div>
         </div>      
     </header>
@@ -148,7 +196,21 @@
                 <ul class="masters__list list">
                     <li class="masters__item">
                         <article class="card">
-                            <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="450">
+                            <picture>
+                                <source
+                                    srcset="./images/masters/master1-desk1x.jpg 1x, ../images/masters/master1-desk2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/masters/master1-mob1x.jpg 1x, ./images/masters/master1-mob2x.jpg 1x 2x"
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="./images/masters/master1-mob1x.jpg"
+                                    alt="Игорь Демьяненко"
+                                    width="450"
+                                />
+                            </picture>
                             <h3 class="card__title">Игорь Демьяненко</h3>
                             <p lang="en" class="card__text">Product Designer</p>
                             <ul class="soc__list masters-soc__list list">
@@ -185,8 +247,22 @@
                     </li>
 
                     <li class="masters__item">
-                        <article class="card">                            
-                            <img src="./images/img5.jpg" alt="Ольга Репина" width="450">
+                        <article class="card"> 
+                            <picture>
+                                <source
+                                    srcset="./images/masters/master2-desk1x.jpg 1x, ./images/masters/master2-desk2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/masters/master2-tab1x.jpg 1x, ./images/masters/master2-tab2x.jpg 1x 2x"
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="./images/masters/master2-tab1x.jpg 1x"
+                                    alt="Ольга Репина"
+                                    width="450"
+                                />
+                            </picture>
                             <h3 class="card__title">Ольга Репина</h3>
                             <p lang="en" class="card__text">Frontend Developer</p>
                             <ul class="soc__list masters-soc__list list">
@@ -224,7 +300,21 @@
 
                     <li class="masters__item">
                         <article class="card">
-                            <img src="./images/img6.jpg" alt="Николай Тарасов" width="450">
+                            <picture>
+                                <source
+                                    srcset="./images/masters/master3-desk1x.jpg 1x, ./images/masters/master3-desk2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/masters/master3-tab1x.jpg 1x, ./images/masters/master3-tab2x.jpg 1x 2x"
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="./images/masters/master3-tab1x.jpg 1x"
+                                    alt="Николай Тарасов"
+                                    width="450"
+                                />
+                            </picture>
                             <h3 class="card__title">Николай Тарасов</h3>
                             <p lang="en" class="card__text">Marketing</p>
                             <ul class="soc__list masters-soc__list list">
@@ -262,7 +352,21 @@
 
                     <li class="masters__item">
                         <article class="card">
-                            <img src="./images/img7.jpg" alt="Михаил Ермаков" width="450">
+                            <picture>
+                                <source
+                                    srcset="./images/masters/master4-desk1x.jpg 1x, ./images/masters/master4-desk2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/masters/master4-tab1x.jpg 1x, ./images/masters/master4-tab2x.jpg 1x 2x"
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="./images/masters/master4-tab1x.jpg 1x"
+                                    alt="Михаил Ермаков"
+                                    width="450"
+                                />
+                            </picture>
                             <h3 class="card__title">Михаил Ермаков</h3>
                             <p lang="en" class="card__text">UI Designer</p>
                             <ul class="soc__list masters-soc__list list">
