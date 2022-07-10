@@ -798,7 +798,6 @@ body.modal-open {
   .card img {
     width: 354px;
     height: 374px;
-    outline: 1px solid teal;
   }
 }
 
