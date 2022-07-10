@@ -789,6 +789,14 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card img {
+    width: 354px;
+    height: 374px;
+    outline: 1px solid teal;
+  }
+}
+
 .masters__item {
   width: 100%;
   margin-bottom: 30px;
