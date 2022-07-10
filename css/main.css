@@ -501,6 +501,7 @@ body.modal-open {
 
 .mobile-container {
   width: 100%;
+  max-width: 420px;
   height: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -510,6 +511,7 @@ body.modal-open {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .menu-open-btn {
@@ -528,6 +530,10 @@ body.modal-open {
 .menu-open-btn:hover, .menu-open-btn:focus {
   fill: #2196F3;
 }
+.menu-open-btn > svg {
+  width: 40px;
+  height: 40px;
+}
 
 .menu-close-btn {
   display: block;
@@ -538,6 +544,9 @@ body.modal-open {
 }
 .menu-close-btn:hover, .menu-close-btn:focus {
   fill: #2196F3;
+}
+.menu-close-btn > svg {
+  width: 40px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -836,7 +845,6 @@ body.modal-open {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gep));
   margin-top: calc(-1 * var(--card-set-gep));
-  outline: 1px solid orange;
 }
 
 .customers__link {

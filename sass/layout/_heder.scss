@@ -139,10 +139,12 @@
     z-index: 1;
     padding-top: 48px;
     padding-bottom: 48px;
+    
   }
 
   .mobile-container {
     width: 100%;
+    max-width: 420px;
     height: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -152,7 +154,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow-y: auto;
-    
+    overflow-x: hidden;
   }
 
   .menu-open-btn {
@@ -168,6 +170,10 @@
     &:hover, &:focus {
       fill: #2196F3;
     }
+    &>svg {
+      width: 40px;
+      height: 40px;
+    }
   }
   
   .menu-close-btn {
@@ -178,6 +184,9 @@
     margin-bottom: 30px; 
     &:hover, &:focus {
       fill: #2196F3;
+    }
+    &>svg {
+      width: 40px;
     }
 }
 
