@@ -2,14 +2,15 @@
   .customers__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: calc(-1 * var(--card-set-gep));
     margin-top: calc(-1 * var(--card-set-gep));
     // outline: 1px solid orange;
   }
     
   .customers__link {
-    max-width: 210px;
-    height: 92px;
+    
+    height: 92px;   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +34,7 @@
       flex-basis: calc(100% / 6 - var(--card-set-gep));
     
     }
-  
-    
+
     fill: #AFB1B8;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, 
