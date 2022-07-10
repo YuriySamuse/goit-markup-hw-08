@@ -743,6 +743,11 @@ body.modal-open {
   text-align: center;
   color: var(--title-color);
 }
+@media screen and (min-width: 768px) {
+  .about__list-title {
+    text-align: start;
+  }
+}
 
 .about__list-text {
   margin-top: 0;

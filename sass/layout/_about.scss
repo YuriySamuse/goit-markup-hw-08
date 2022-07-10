@@ -50,6 +50,9 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--title-color);
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
   }
   .about__list-text {
     margin-top: 0;
