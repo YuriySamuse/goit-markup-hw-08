@@ -596,8 +596,14 @@ body.modal-open {
   display: flex;
 }
 
+.mob-soc__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
 .mob-soc__item:not(:first-child) {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+.mob-soc__item:not(:last-child) {
+  padding-right: 10px;
 }
 
 .mob-soc__link {
