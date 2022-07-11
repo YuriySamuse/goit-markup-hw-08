@@ -1,6 +1,13 @@
 .portfolio {
-    padding-top: var(--padin-botom-sect);
-    padding-bottom: var(--padin-botom-sect);  
+    @media screen and (min-width: 1200px) {
+        padding-top: var(--padin-botom-sect);
+        padding-bottom: var(--padin-botom-sect);
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom:60px;
+    }
+      
 }
   /* ----Filter-Button---- */
 .filter__list {
@@ -8,10 +15,15 @@
     flex-wrap: wrap;
     justify-content: start;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 26px;
     @media screen and (min-width: 768px) {
         justify-content: center;
+        margin-bottom: 12px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 36px;
+    }
+       
 }
 .filter__item{
     margin-right: 8px;
@@ -55,9 +67,9 @@
     @media screen and (min-width: 768px) {
         justify-content: unset;
     }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     width: 1200px;
+    // }
 }
 
 .cards__link {
