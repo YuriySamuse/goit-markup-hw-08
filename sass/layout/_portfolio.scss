@@ -1,13 +1,13 @@
 .portfolio {
-    @media screen and (min-width: 1200px) {
-        padding-top: var(--padin-botom-sect);
-        padding-bottom: var(--padin-botom-sect);
-    }
+    
     @media screen and (min-width: 768px) {
         padding-top: 60px;
         padding-bottom:60px;
     }
-      
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: var(--padin-botom-sect);
+    }
 }
   /* ----Filter-Button---- */
 .filter__list {

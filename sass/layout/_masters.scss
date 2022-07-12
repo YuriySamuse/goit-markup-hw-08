@@ -1,6 +1,12 @@
 .masters {
     background-color: var(--portfol-btn);
     padding-bottom: 79px;
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 45px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 79px;
+    }
   }
   
   .masters__list {
@@ -18,9 +24,15 @@
       height: 374px;
     }   
   }
+
+  .masters__title {
+    margin-bottom: 15px;
+  }
+
   .masters__item {
     width: 100%;
-      margin-bottom: 30px;
+    margin-bottom: 30px;
+      
     
       @media screen and (min-width: 768px) {
         width: calc((100% - 4 * 15px) / 2);

@@ -692,6 +692,12 @@ body.modal-open {
   text-transform: uppercase;
   color: var(--btn-color);
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .hero__btn {
   cursor: pointer;
@@ -712,6 +718,17 @@ body.modal-open {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--acent-btn-hover);
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    padding-bottom: 45px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -818,6 +835,16 @@ body.modal-open {
   background-color: var(--portfol-btn);
   padding-bottom: 79px;
 }
+@media screen and (max-width: 1199px) {
+  .masters {
+    padding-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .masters {
+    padding-bottom: 79px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .masters__list {
@@ -831,6 +858,10 @@ body.modal-open {
     width: 354px;
     height: 374px;
   }
+}
+
+.masters__title {
+  margin-bottom: 15px;
 }
 
 .masters__item {
@@ -895,7 +926,12 @@ body.modal-open {
   justify-content: center;
   margin-left: calc(-1 * var(--card-set-gep));
   margin-top: calc(-1 * var(--card-set-gep));
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__list {
+    padding-bottom: 94px;
+  }
 }
 
 .customers__link {
@@ -941,16 +977,16 @@ body.modal-open {
   fill: carentColor;
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    padding-top: var(--padin-botom-sect);
-    padding-bottom: var(--padin-botom-sect);
-  }
-}
 @media screen and (min-width: 768px) {
   .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: var(--padin-botom-sect);
   }
 }
 
@@ -1139,7 +1175,6 @@ body.modal-open {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--btn-color);
-  margin-bottom: 9px;
 }
 
 .adress__list {
@@ -1152,8 +1187,11 @@ body.modal-open {
   }
 }
 
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .adress__cont {
-  margin-top: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

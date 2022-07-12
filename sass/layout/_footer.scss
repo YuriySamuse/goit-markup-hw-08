@@ -54,7 +54,6 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--btn-color);
-    margin-bottom: 9px;
   }
   .adress__list {
     display: block;
@@ -66,8 +65,11 @@
     }
   }
 
+  .adress__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
   .adress__cont {
-    margin-top: 9px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

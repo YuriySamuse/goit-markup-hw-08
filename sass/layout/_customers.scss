@@ -5,7 +5,10 @@
     justify-content: center;
     margin-left: calc(-1 * var(--card-set-gep));
     margin-top: calc(-1 * var(--card-set-gep));
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
+      padding-bottom: 94px;
+    }
     // outline: 1px solid orange;
   }
     
